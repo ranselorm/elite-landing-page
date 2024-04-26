@@ -12,9 +12,8 @@ interface CardProps {
 const Card = ({ title, Icon, subtitle, id }: CardProps) => {
   return (
     <div
-      className={`w-[270px] h-[200px] bg-white border-gray-200 border font-poppins rounded-lg py-5 flex ${
-        id === "center" && ""
-      }`}
+      className="md:w-[270px] md:h-[200px] h-[250px] bg-white border-gray-200 border font-poppins rounded-lg py-5 flex 
+      "
     >
       <div className="flex flex-col gap-y-2 items-center justify-center">
         <div className="bg-gray-100 p-3 rounded-full mb-4">

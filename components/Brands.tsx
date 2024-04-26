@@ -33,10 +33,10 @@ const cars = [
 
 const Brands = () => {
   return (
-    <section className="px-4 md:px-10 lg:px-24 py-20 font-poppins mt-10">
+    <section className="px-4 md:px-10 lg:px-24 py-10 md:py-20 font-poppins mt-10">
       <div className="flex items-center justify-between">
         {cars?.map((car, index) => (
-          <div key={index} className="md:w-14 md:h-14 w-10 h-10">
+          <div key={index} className="md:w-14 md:h-14 w-8 h-8">
             <Image priority src={car.icon} alt="Follow us on Twitter" />
           </div>
         ))}

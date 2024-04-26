@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Text from "./Text";
 
-const Features = () => {
+const User = () => {
   return (
     <section className="px-4 md:px-10 lg:px-24 py-6 font-poppins">
       <div>
-        <div className="flex flex-row-reverse w-full items-center gap-x-20 mt-16">
-          <div className="w-6/12 rounded-md overflow-hidden">
+        <div className="flex flex-col md:flex-row-reverse w-full items-center gap-x-20 my-10 md:my-20">
+          <div className="w-full md:w-6/12 rounded-md overflow-hidden">
             <div className="relative w-[450px] h-[350px]">
               <Image
                 fill
@@ -17,8 +17,8 @@ const Features = () => {
               />
             </div>
           </div>
-          <div className="w-6/12 p-4">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-700">
+          <div className="w-full md:w-6/12 p-4">
+            <h2 className="text-2xl font-semibold my-6 text-gray-700">
               Unlock convenience with our app
             </h2>
             <div className="flex flex-col gap-y-5">
@@ -47,4 +47,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default User;

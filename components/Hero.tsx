@@ -1,12 +1,14 @@
+import { Link } from "react-scroll";
+
 const Hero = () => {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat md:h-screen h-[600px] px-4 md:px-10 lg:px-24 font-poppins text-white"
+      className="relative bg-cover bg-center bg-no-repeat md:h-screen h-[750px] px-4 md:px-10 lg:px-24 font-poppins text-white"
       style={{
         backgroundImage: `url(/lady.jpg)`,
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-80" />
+      <div className="absolute inset-0 bg-black bg-opacity-75" />
       <div className="relative flex items-center h-full">
         <div className="">
           <div className="text-white max-w-[700px] flex flex-col items-start gap-y-6">
@@ -19,7 +21,8 @@ const Hero = () => {
               your ride and hit the road in no time. Simple, fast, and just for
               you.
             </p>
-            <button className="mt-4 text-white py-2 px-8 rounded shadow transition-colors hover:bg-white hover:text-black bg-green-700 font-bold">
+
+            <button className="mt-4 text-white md:py-2 md:px-8 px-12 py-3 rounded shadow transition-colors hover:bg-white hover:text-black bg-green-700 font-bold">
               Get App
             </button>
           </div>

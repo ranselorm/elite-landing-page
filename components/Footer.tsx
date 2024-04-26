@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white text-center lg:text-left font-poppins px-4 md:px-10 lg:px-24 py-10">
-      <div className=" flex justify-between">
+      <div className="flex flex-col lg:flex-row justify-between items-start">
         <div className="lg:mb-0">
           <Link href="/">
             <span className="font-semibold text-xl tracking-wide">
