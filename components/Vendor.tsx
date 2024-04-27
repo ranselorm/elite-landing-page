@@ -43,7 +43,7 @@ const Vendor = () => {
                 subtitle="Simplify operations with intuitive tools, saving time and enhancing service quality."
               />
             </div>
-            <Link href="">
+            <Link href="https://green-mud-08bec770f-dev.eastus2.3.azurestaticapps.net/signup">
               <button className="mt-6 text-white py-2 px-8 rounded shadow transition-colors hover:bg-white hover:text-black bg-green-700 font-bold md:w-max w-full">
                 Get Started
               </button>
