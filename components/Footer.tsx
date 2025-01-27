@@ -13,12 +13,12 @@ const Footer = () => {
         <div className="lg:mb-0">
           <Link href="/">
             <span className="font-semibold text-xl tracking-wide">
-              ELITE RIDE
+              FleetConnect
             </span>
           </Link>
           <div className="text-sm py-4">
             <p className="mb-4 text-gray-300">
-              Elite Ride Corporation, 555 Hastings <br />
+              FleetConnect Corporation, 555 Hastings <br />
               Spintext Road, Accra, Ghana
               <br />
             </p>
