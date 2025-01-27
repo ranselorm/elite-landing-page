@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import BMW from "@/public/icons/bmw.svg";
 import Acura from "@/public/icons/acura.svg";
@@ -10,38 +13,54 @@ import Jaguar from "@/public/icons/jag.svg";
 import Honda from "@/public/icons/honda.svg";
 
 const cars = [
-  {
-    icon: BMW,
-  },
-  {
-    icon: Toyota,
-  },
-
-  {
-    icon: Jaguar,
-  },
-  {
-    icon: Benz,
-  },
-  {
-    icon: Tesla,
-  },
-  {
-    icon: Honda,
-  },
+  { icon: BMW },
+  { icon: Toyota },
+  { icon: Jaguar },
+  { icon: Benz },
+  { icon: Tesla },
+  { icon: Honda },
 ];
 
 const Brands = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Staggered animations for child elements
+      },
+    },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
+    hover: { scale: 1.2 },
+  };
+
   return (
-    <section className="px-4 md:px-10 lg:px-24 py-10 md:py-20 font-poppins mt-10">
-      <div className="flex items-center justify-between">
+    <motion.section
+      className="px-4 md:px-10 lg:px-24 py-10 md:py-20 font-poppins mt-10"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <motion.div
+        className="flex items-center justify-between"
+        variants={containerVariants}
+      >
         {cars?.map((car, index) => (
-          <div key={index} className="md:w-14 md:h-14 w-8 h-8">
-            <Image priority src={car.icon} alt="Follow us on Twitter" />
-          </div>
+          <motion.div
+            key={index}
+            className="md:w-14 md:h-14 w-8 h-8"
+            variants={iconVariants}
+            whileHover="hover"
+          >
+            <Image priority src={car.icon} alt="Car Brand" />
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
