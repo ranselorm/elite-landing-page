@@ -6,13 +6,15 @@ const Footer2 = () => {
     <footer className="bg-gray-800 text-white font-poppins px-4 py-10">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
         <div className="text-center lg:text-left">
-          <Link href="/">ELITE RIDE</Link>
+          <Link href="/">FleetConnect</Link>
           <div className="text-sm py-4">
             <p className="mb-4 text-gray-300">
-              Elite Ride Corporation, 555 Hastings <br />
+              FleetConnect, 555 Hastings <br />
               Spintext Road, Accra, Ghana
             </p>
-            <Link href="mailto:admin@eliteride.com">admin@eliteride.com</Link>
+            <Link href="mailto:admin@eliteride.com">
+              admin@fleetconnect.com
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full lg:w-auto">
@@ -80,10 +82,13 @@ const Footer2 = () => {
           <p>Privacy Policy</p>
           <p>Sitemap</p>
         </div>
-        <p className="text-neutral-300 text-center lg:text-right">
+        {/* <p className="text-neutral-300 text-center lg:text-right">
           <span className="mr-2">&copy;</span>
           All rights reserved. Eliteride 2024
-        </p>
+        </p> */}
+        <div className="h-full w-96">
+          <img src="/images/powered.jpg" alt="" className="h-full w-full" />
+        </div>
       </div>
     </footer>
   );
