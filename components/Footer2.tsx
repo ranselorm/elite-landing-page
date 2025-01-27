@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaTiktok,
+  FaLinkedin,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer2 = () => {
   return (
@@ -77,21 +84,33 @@ const Footer2 = () => {
           </div>
         </div>
         <div className="w-full bg-green-700 h-[1px] my-10 bg-opacity-25" />
-
         <div className="text-xs text-gray-300 flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="flex gap-x-4 justify-center lg:justify-start">
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Sitemap</p>
+            <div className="flex items-center">
+              <p className="text-sm">Powered by</p>
+              <div className="w-32 h-auto">
+                <img src="/images/mix.png" alt="logo" />
+              </div>
+            </div>
           </div>
-          {/* <p className="text-neutral-300 text-center lg:text-right">
-          <span className="mr-2">&copy;</span>
-          All rights reserved. Eliteride 2024
-        </p> */}
-          <div className="h-full w-96">
-            <img src="/images/powered.jpg" alt="" className="h-full w-full" />
+          <div className="flex gap-x-4">
+            <p className="flex items-center gap-1">
+              <FaInstagram size={18} />
+              @BerthGlobal
+            </p>
+            <p className="flex items-center gap-1">
+              <FaXTwitter size={18} />
+              @BerthGlobal
+            </p>
+            <p className="flex items-center gap-1">
+              <FaLinkedin size={18} />
+              Berth Engineering
+            </p>
           </div>
         </div>
+        {/* <div className="w-full h-12">
+          <img src="/images/x.png" className="w-full h-full object-cover" />
+        </div> */}
       </div>
     </footer>
   );
